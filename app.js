@@ -1,9 +1,8 @@
 const express = require('express');
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 5000;
 
 app.locals.pretty = true;
-app.set('view engine', 'pug');
 //생략 가능
 app.set('views', './views');
 app.use(express.static('public')); //static directory 'public'
